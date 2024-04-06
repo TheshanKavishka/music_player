@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9ae43b1bf3.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="music-player">
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        
+        <img src="Images/despacito.png" class="song-img">
+        <h1 class="song-name">Despacito</h1>
+        <p class="artist">Luis Fonsi ft. Daddy Yankee</p>
+
+        <audio id="songs">
+            <source src="Audio/Despacito(PaglaSongs).mp3" type="audio/mpeg" class="song">
+        </audio>
+        <input type="range" value="0" id="progress">
+
+        <div class="controls">
+            <div onclick="prevSong()"><i class="fa-solid fa-backward" id="backIcon"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div onclick="nextSong()"><i class="fa-solid fa-forward" id="forwIcon"></i></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
